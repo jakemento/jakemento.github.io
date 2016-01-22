@@ -11,13 +11,19 @@ var divisFive = function (number) {
 };
 
 var divisTeen = function (number) {
-  if (number %5 === 0) {
+  if (number %15 === 0) {
     return "pingpong";
   }
 };
 
+var returnRange = function (number) {
+  var output = [];
+  for (var i = 0; i <= number; i += number) {
 
-
+    output.push(i);
+    }
+  return output;
+};
 
 
 
