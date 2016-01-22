@@ -18,6 +18,6 @@ describe('divisTeen', function() {
 
 describe('returnRange', function() {
   it("returns a range of numbers from 1 to the chosen number", function () {
-    expect(returnRange(4)).to.equal([1,2,3,4])
+    expect(returnRange(4)).to.eql([1,2,3,4])
   });
 });

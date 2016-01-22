@@ -18,10 +18,10 @@ var divisTeen = function (number) {
 
 var returnRange = function (number) {
   var output = [];
-  for (var i = 0; i <= number; i += number) {
-
+  for (var i = 1; i <= number; i++) {
     output.push(i);
     }
+
   return output;
 };
 
