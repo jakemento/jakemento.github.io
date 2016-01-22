@@ -4,6 +4,18 @@ var divisThree = function (number) {
   }
 };
 
+var divisFive = function (number) {
+  if (number %5 === 0) {
+    return "pong";
+  }
+};
+
+var divisTeen = function (number) {
+  if (number %5 === 0) {
+    return "pong";
+  }
+};
+
 
 
 
