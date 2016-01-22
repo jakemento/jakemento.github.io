@@ -12,7 +12,7 @@ var divisFive = function (number) {
 
 var divisTeen = function (number) {
   if (number %5 === 0) {
-    return "pong";
+    return "pingpong";
   }
 };
 
