@@ -1,20 +1,28 @@
 var pingPonger = function (number) {
-  "use strict";
-  if (number % 15 === 0) {
-    return [1,2,"ping",4,"pong","ping",7,8,"ping","pong",11,"ping",13,14,"pingpong"];
-  }
-  if (number % 5 === 0) {
-    return [1,2,"ping",4,"pong"];
-  }
-  if (number % 3 === 0) {
-    return [1,2,"ping"];
-  }
   var output = [];
-  for (var i = 1; i <= number; i++) {
+  for (var i = 1; i < number; i++) {
     output.push(i);
   }
-    return [1,2,"ping",4];
-  };
+
+    if (number % 15 === 0) {
+  output.push("pingpong");
+
+
+    }else if (number % 3 === 0) {
+  output.push("ping");
+
+    } else if (number % 5 === 0) {
+  output.push("pong");
+
+
+    }else {
+    output.push(i)
+  }
+  return output;
+}
+
+
+
 
 
 
@@ -29,8 +37,8 @@ $(document).ready(function() {
     var result = resultArray.toString();
 
     $("#result").append(result);
-  })
   });
+});
 
 
 // var returnRange = function (number) {
