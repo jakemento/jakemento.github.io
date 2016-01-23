@@ -6,6 +6,6 @@ This is a website I created for my third code review. Its main function is to, g
 ##Program Setup Instructions
 navigate to the site, enter in a number, then you will see it displayed with the divisibles as either ping, pong, or ping pong.
 ###Link
-http://jakemento.github.io/number
+http://jakemento.github.io/
 ##Legal
 Copyright(c) 2015 Jacob Steinberg
