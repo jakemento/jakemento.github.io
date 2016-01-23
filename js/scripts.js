@@ -4,22 +4,23 @@ var pingPonger = function (number) {
     output.push(i);
   }
 
-    if (number % 15 === 0) {
-  output.push("pingpong");
+  if (number % 15 === 0) {
+    output.push("pingpong");
+    // output[i="pingpong"];
 
+  } else if (number % 5 === 0) {
+    output.push("pong");
+    // output[i="pong"];
 
-    }else if (number % 3 === 0) {
-  output.push("ping");
+  } else if (number % 3 === 0) {
+    output.push("ping");
+    // output[i="ping"];
 
-    } else if (number % 5 === 0) {
-  output.push("pong");
-
-
-    }else {
-    output.push(i)
+  } else {
+    output.push(i);
   }
   return output;
-}
+};
 
 
 
