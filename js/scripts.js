@@ -3,7 +3,7 @@ var pingPonger = function (number) {
   for (var i = 1; i <= number; i++) {
     output.push(i);
   }
-  finalResults = [];
+  var finalResults = [];
 
   output.forEach(function(entry){
 
