@@ -1,32 +1,30 @@
 var pingPonger = function (number) {
   var output = [];
-  for (var i = 1; i < number; i++) {
+  for (var i = 1; i <= number; i++) {
     output.push(i);
   }
+  finalResults = [];
 
-  if (number % 15 === 0) {
-    output.push("pingpong");
+  output.forEach(function(entry){
+
+  if (entry % 15 === 0) {
+    finalResults.push("pingpong");
     // output[i="pingpong"];
 
-  } else if (number % 5 === 0) {
-    output.push("pong");
+  } else if (entry % 5 === 0) {
+    finalResults.push("pong");
     // output[i="pong"];
 
-  } else if (number % 3 === 0) {
-    output.push("ping");
+  } else if (entry % 3 === 0) {
+    finalResults.push("ping");
     // output[i="ping"];
 
   } else {
-    output.push(i);
+    finalResults.push(entry);
   }
-  return output;
+});
+  return finalResults;
 };
-
-
-
-
-
-
 
 
 $(document).ready(function() {
@@ -40,32 +38,3 @@ $(document).ready(function() {
     $("#result").append(result);
   });
 });
-
-
-// var returnRange = function (number) {
-//   var output = [];
-//   for (var i = 1; i <= number; i++) {
-//     output.push(i);
-//     }
-//   return output;
-// }
-//
-//
-//
-// var divisThree = function (number) {
-//   if (number %3 === 0) {
-//     return "ping";
-//   }
-// };
-//
-// var divisFive = function (number) {
-//   if (number %5 === 0) {
-//     return "pong";
-//   }
-// };
-//
-// var divisTeen = function (number) {
-//   if (number %15 === 0) {
-//     return "pingpong";
-//   }
-// };
